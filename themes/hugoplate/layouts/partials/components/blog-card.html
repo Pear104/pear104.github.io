@@ -1,13 +1,13 @@
-<div class="bg-body dark:bg-darkmode-body">
+<div class="">
   {{ $image:= .Params.image }}
   {{ if $image }}
     {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
   {{ end }}
-  <h4 class="mb-3">
+  <div class="text-lg mb-3 font-semibold">
     <a href="{{ .RelPermalink }}">
       {{ .Title }}
     </a>
-  </h4>
+  </div>
   {{ $categories:= .Params.categories }}
   {{ if $categories }}
     <ul class="mb-4">
@@ -31,7 +31,7 @@
     </ul>
   {{ end }}
   <p class="mb-6">{{ .Summary | plainify }}</p>
-  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+  <!-- <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
     {{ T "read_more" }}
-  </a>
+  </a> -->
 </div>
