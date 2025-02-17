@@ -19,21 +19,14 @@ content:
         label: Author
         type: string
         default: "OHM LAB"
-      - name: ogImage
-        label: Image (social sharing)
-        type: object
-        fields:
-          - { name: url, label: URL, type: image, default: "/images/image-placeholder.png" }
       - name: categories
         label: Categories
-        type: list
+        type: string
         list: true
-        options: ["Application", "Data"]
       - name: tags
         label: Tags
         type: string
         list: true
-        options: ["nextjs", "tailwind"]
       - name: draft
         label: Draft
         type: boolean
