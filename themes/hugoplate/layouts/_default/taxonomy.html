@@ -4,16 +4,14 @@
 
   <section class="section">
     <div class="container">
-      <div class="row gx-5">
+      <div class="row">
         <!-- blog posts -->
-        <div class="lg:col-8">
-          <div class="row">
-            {{ range .Data.Pages }}
-              <div class="md:col-6 mb-14">
-                {{ partial "components/blog-card" . }}
-              </div>
-            {{ end }}
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-14">
+          {{ range .Data.Pages }}
+            <div class="mb-14">
+              {{ partial "components/blog-card" . }}
+            </div>
+          {{ end }}
         </div>
       </div>
     </div>

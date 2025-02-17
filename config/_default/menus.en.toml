@@ -44,16 +44,21 @@ weight = 4
 
 # footer menu
 [[footer]]
-name = "About"
-url = "/about"
+name = "Trang chủ"
+url = "/"
 weight = 1
 
 [[footer]]
-name = "Elements"
-url = "/elements"
+name = "Giới thiệu"
+url = "/about"
 weight = 2
 
 [[footer]]
-name = "Privacy Policy"
+name = "Chính sách hoạt động"
 url = "/privacy-policy"
 weight = 3
+
+# [[footer]]
+# name = "Elements"
+# url = "/elements"
+# weight = 3

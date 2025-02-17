@@ -1,18 +1,21 @@
 #################### default parameters ############################
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
-favicon = "images/favicon.png"
+# favicon = "images/favicon.png"
+favicon = "images/favicon.webp"
+
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
+logo = "images/logo.png"
+logo_darkmode = "images/logo.png"
 # logo = "images/logo.png"
-logo = "HEHE"
-logo_darkmode = "images/logo-darkmode.png"
+# logo_darkmode = "images/logo-darkmode.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "160px"
-logo_height = "32px"
+logo_width = "70px"
+logo_height = "14px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "OHM LAB"
+logo_text = "Ohm Lab"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
@@ -28,7 +31,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "Designed & Developed by [Zeon Studio](https://zeon.studio)"
+copyright = "Email: ohmlab-fpthcm@gmail.com<br>Địa chỉ: Lô E2a-7, Đường D1 Khu Công nghệ cao, P. Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí Minh" 
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader

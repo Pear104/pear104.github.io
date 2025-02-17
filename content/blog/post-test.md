@@ -8,10 +8,16 @@ categories:
   - Test
 author: "OHM LAB"
 tags:
-  - Test
+  - nextjs
 draft: false
 ---
 
 Test page cms
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/8xFV4kdMtx4?si=sxpg6rdUk5mH\_2ew](https://www.youtube.com/embed/8xFV4kdMtx4?si=sxpg6rdUk5mH_2ew)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+### Youtube video
+
+{{< youtube ResipmZmpDU >}}
+
+[![Alternative Text](/images/home/ohm-lab-banner.png)](/images/home/ohm-lab-banner.png)
+
+{{< gallery dir="images/gallery" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}

@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "OHM FPTHCM LAB"
+  title: "OHM LAB FPTHCM"
   content: "Trang thông tin chính thức của phòng LAB OHM<br> Tại Trường Đại Học FPT Thành phố Hồ Chí Minh"
   # image: "/images/banner.png"
   # image: "/images/home/ohm-lab-banner.png"

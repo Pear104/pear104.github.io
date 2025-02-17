@@ -5,8 +5,8 @@
         <article class="lg:col-10">
           {{ $image:= .Params.image }}
           {{ if $image }}
-            <div class="mb-10">
-              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
+            <div class="mb-10 object-fill">
+              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full aspect-video rounded object-cover object-center") }}
             </div>
           {{ end }}
           <h1 class="h2 mb-4">
