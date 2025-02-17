@@ -1,32 +1,41 @@
 media:
-  input: public/assets
-  output: /assets
+  input: public/images
+  output: /images
   categories: [ "image" ]
 content:
-  - name: blog
-    label: Blog
+  - name: posts
+    label: Posts
     type: collection
     path: content/blog
     view:
-      fields: [ coverImage, title, date ]
+      fields: [ coverImage, title, date, categories, tags ]
     fields:
       - { name: title, label: Title, type: string, required: true }
-      - { name: excerpt, label: Excerpt, type: string }
-      - { name: coverImage, label: Cover image, type: image }
+      - { name: description, label: Description, type: string }
+      - { name: meta_title, label: Meta Title, type: string }
+      - { name: coverImage, label: Cover image, type: image, options: { source: "image" } }
       - { name: date, label: Date, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" } }
       - name: author
         label: Author
-        type: object
-        fields:
-          - { name: name, label: Name, type: string }
-          - { name: picture, label: Picture, type: image }
+        type: string
+        default: "OHM LAB"
       - name: ogImage
         label: Image (social sharing)
         type: object
         fields:
-          - { name: url, label: URL, type: image }
+          - { name: url, label: URL, type: image, default: "/images/image-placeholder.png" }
+      - name: categories
+        label: Categories
+        type: list
+        list: true
+        options: ["Application", "Data"]
       - name: tags
         label: Tags
         type: string
         list: true
+        options: ["nextjs", "tailwind"]
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
       - { name: body, label: Body, type: rich-text }
