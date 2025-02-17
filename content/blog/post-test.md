@@ -1,23 +1,14 @@
 ---
-title: "Test page cmsssssssssssss"
-meta_title: ""
-description: "Test page cms desc"
-date: 2022-04-04T05:00:00Z
-image: "/images/home/ohm-lab-banner.png"
+title: Test page cms
+description: Test page cms desc
+meta_title: Test page cms meta title
+image: /images/banner.png
+author: OHM LAB
 categories:
   - Test
-author: "OHM LAB"
 tags:
   - nextjs
 draft: false
 ---
 
 Test page cms
-
-### Youtube video
-
-{{< youtube ResipmZmpDU >}}
-
-[![Alternative Text](/images/home/ohm-lab-banner.png)](/images/home/ohm-lab-banner.png)
-
-{{< gallery dir="images/gallery" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
