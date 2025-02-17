@@ -1,20 +1,30 @@
 media:
   input: assets/images
   output: /images
-  categories: [ "image" ]
+  categories: ["image"]
 content:
   - name: posts
     label: Posts
     type: collection
     path: content/blog
     view:
-      fields: [ coverImage, title, date, categories, tags ]
+      fields: [image, title, date, categories, tags]
     fields:
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string }
       - { name: meta_title, label: Meta Title, type: string }
-      - { name: coverImage, label: Cover image, type: image, options: { source: "image" } }
-      - { name: date, label: Date, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" } }
+      - {
+          name: image,
+          label: Cover image,
+          type: image,
+          options: { source: "image" },
+        }
+      - {
+          name: date,
+          label: Date,
+          type: date,
+          options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" },
+        }
       - name: author
         label: Author
         type: string
